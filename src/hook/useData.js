@@ -7,7 +7,7 @@ const useData = (url) => {
         fetch(url)
             .then(res => res.json())
             .then(data => setLoadedData(data))
-    }, [])
+    }, [url])
 
     return loadedData;
 }

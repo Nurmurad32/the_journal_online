@@ -1,8 +1,7 @@
 import moment from 'moment';
 import { useContext, useState } from 'react';
 import { Button, Card, Image } from 'react-bootstrap';
-import { FaEye, FaRegStar, FaShareAlt, FaStar } from 'react-icons/fa';
-import Rating from 'react-rating';
+import { FaShareAlt} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProviders';
 import toast from 'react-hot-toast';
@@ -13,7 +12,7 @@ import "./NewsCard.css"
 
 const NewsCard = ({ news }) => {
 
-    const { _id, title, details, image_url, author, total_view, rating } = news;
+    const { _id, title, details, image_url, author } = news;
     const { bookmarkedList, setBookmarkedList } = useContext(AuthContext);
     const [bookmarked, setBookmarked] = useState(false);
 
@@ -49,7 +48,7 @@ const NewsCard = ({ news }) => {
                             <div className="social-share-dropdown-content">
                                 <ShareSocial
                                     title={'Share this news in your feed'}
-                                    url={`http://localhost:5173/news/${_id}`}
+                                    url={`https://the-journal-online-server-nurmurad32.vercel.app/news/${_id}`}
                                     socialTypes={['facebook', 'twitter', 'linkedin', 'reddit']}
                                 />
                             </div>

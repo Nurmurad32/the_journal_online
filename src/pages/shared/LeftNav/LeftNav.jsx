@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import  { useEffect, useState } from 'react';
 import ActiveLink from '../../../components/ActiveLink/ActiveLink';
 import "./LeftNav.css"
-import bg from '../../../assets/bg.png'
 
 const LeftNav = () => {
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/category')
+        fetch('https://the-journal-online-server-nurmurad32.vercel.app/category')
             .then(res => res.json())
             .then(data => setCategories(data))
     }, [])
@@ -19,7 +17,7 @@ const LeftNav = () => {
             </div>
             <div className='ps-4 leftNav' style={{backgroundColor: "rgb(66 70 73 / 77%)", marginBottom: "25px", padding:"10px"}} >
                 {
-                    categories.map(category => <p
+                    categories?.map(category => <p
                         className='leftNavStyle'
                         key={category.id}
                     >

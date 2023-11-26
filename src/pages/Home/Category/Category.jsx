@@ -14,7 +14,7 @@ const Category = () => {
             </Helmet>
             {/* {id && <h2>Welcome to category section: {categoryNews.length}</h2>} */}
             {
-                categoryNews.map(news => <NewsCard
+                categoryNews?.map(news => <NewsCard
                 key={news._id}
                 news={news}
                 ></NewsCard>)

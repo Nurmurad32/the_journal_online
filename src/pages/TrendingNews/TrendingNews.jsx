@@ -4,7 +4,7 @@ import NewsCard from '../Home/NewsCard/NewsCard';
 
 const TrendingNews = () => {
 
-    const newsData = useData("http://localhost:3000/news");
+    const newsData = useData("https://the-journal-online-server-nurmurad32.vercel.app/news");
 
     const trendyNewsFilter = newsData?.filter(news => news.others_info.is_trending === true);
     console.log(trendyNewsFilter);

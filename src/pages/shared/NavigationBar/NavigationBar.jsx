@@ -63,7 +63,7 @@ const NavigationBar = () => {
                                             <div className="dropdown-bookmarked-content">
                                                 {
                                                     bookmarkedList.length > 0
-                                                        ? bookmarkedList.map(bookmark => <p key={bookmark._id} className='bookmark-class mb-0'>
+                                                        ? bookmarkedList?.map(bookmark => <p key={bookmark._id} className='bookmark-class mb-0'>
                                                             <div className='d-flex align-items-center justify-content-between '>
                                                                 <div>
                                                                     <Image src={bookmark.image_url} rounded height={50} width={50}></Image>
@@ -93,7 +93,7 @@ const NavigationBar = () => {
                         </Nav>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="nav-phone">
-                            <ActiveLink to="/category/0">Home</ActiveLink>
+                            <ActiveLink to="/">Home</ActiveLink>
                             {/* <ActiveLink to="/about">About</ActiveLink> */}
                             {/* <ActiveLink to="/career">Career</ActiveLink> */}
                             <ActiveLink to="/trending-news">Trending News</ActiveLink>
@@ -115,7 +115,7 @@ const NavigationBar = () => {
                                             <div className="dropdown-bookmarked-content">
                                                 {
                                                     bookmarkedList.length > 0
-                                                        ? bookmarkedList.map(bookmark => <p key={bookmark._id} className='bookmark-class mb-0'>
+                                                        ? bookmarkedList?.map(bookmark => <p key={bookmark._id} className='bookmark-class mb-0'>
                                                             <div className='d-flex align-items-center justify-content-between '>
                                                                 <div>
                                                                     <Image src={bookmark.image_url} rounded height={50} width={50}></Image>

@@ -3,15 +3,15 @@
 This is an online newspaper website. 
 
 >
->Live URL : [THE JOURNAL ONLINE]()
+>Live URL : [THE JOURNAL ONLINE](https://the-journal-online.web.app/)
 >
->Server Side URL : [THE JOURNAL ONLINE server]()
+>Server Side URL : [THE JOURNAL ONLINE server](https://the-journal-online-server-nurmurad32.vercel.app/)
 
 >GitHub Link:
 >
->> Client Side Code : [THE JOURNAL ONLINE Client Side Code]()
+>> Client Side Code : [THE JOURNAL ONLINE Client Side Code](https://github.com/Nurmurad32/the_journal_online)
 >>
->> Server Side Code : [THE JOURNAL ONLINE Server Side Code]()
+>> Server Side Code : [THE JOURNAL ONLINE Server Side Code](https://github.com/Nurmurad32/the_journal_online_server)
 
 
 
@@ -39,8 +39,8 @@ This is an online newspaper website.
     - HTML 
     - CSS 
     - JAVASCRIPT
+    - Bootstrap
     - React Bootstrap
-    - Firebase for Authentication and User Registration
     - ReactJS
         -  React Router Dom
         -  Context API
@@ -48,8 +48,10 @@ This is an online newspaper website.
         -  Custom Hook
         -  Toast
         -  Icons
+        -  Social Share
  
 - **Backend**
+    - Firebase for Authentication and User Registration
     - NodeJS
     - ExpressJS
     - Rest API
